@@ -13,9 +13,21 @@ async function nighthawk() {
       .forEach((el) => {
         resc.push(el);
       });
-    let rand = Math.floor(1 + Math.random() * (5 + 1 - 1));
+    const rand = Math.floor(1 + Math.random() * (5 + 1 - 1));
+    let contOtvet = content.split("\n");
+    const rescOtvet = [];
+    let arr = [];
+    contOtvet
+      .filter((word) => word.length < 10 && word.length > 2)
+      .forEach((el) => {
+        rescOtvet.push(el);
+      });
 
-    console.log(resc[rand]);
+    const otvet = rescOtvet[rand];
+    arr.push(resc[rand]);
+    arr.push(otvet);
+
+    return arr;
   } catch (err) {
     console.error(err);
   }
@@ -34,9 +46,21 @@ async function otter() {
       .forEach((el) => {
         resc.push(el);
       });
-    let rand = Math.floor(1 + Math.random() * (6 + 1 - 1));
+    const rand = Math.floor(1 + Math.random() * (5 + 1 - 1));
+    let contOtvet = content.split("\n");
+    const rescOtvet = [];
+    let arr = [];
+    contOtvet
+      .filter((word) => word.length < 10 && word.length > 2)
+      .forEach((el) => {
+        rescOtvet.push(el);
+      });
 
-    console.log(resc[rand]);
+    const otvet = rescOtvet[rand];
+    arr.push(resc[rand]);
+    arr.push(otvet);
+
+    return arr;
   } catch (err) {
     console.error(err);
   }
@@ -55,14 +79,27 @@ async function raccoon() {
       .forEach((el) => {
         resc.push(el);
       });
-    let rand = Math.floor(1 + Math.random() * (7 + 1 - 1));
+    const rand = Math.floor(1 + Math.random() * (5 + 1 - 1));
+    let contOtvet = content.split("\n");
+    const rescOtvet = [];
+    let arr = [];
+    contOtvet
+      .filter((word) => word.length < 10 && word.length > 2)
+      .forEach((el) => {
+        rescOtvet.push(el);
+      });
 
-    console.log(resc[rand]);
+    const otvet = rescOtvet[rand];
+    arr.push(resc[rand]);
+    arr.push(otvet);
+
+    return arr;
   } catch (err) {
     console.error(err);
   }
 }
 
+raccoon();
 module.exports = {
   nighthawk,
   otter,
